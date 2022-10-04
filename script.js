@@ -4,7 +4,7 @@ import pokemonArray from "./data/pokemon.js";
 const cardContainer = document.querySelector(".card-container");
 const showPokemon = () => {
     pokemonArray.forEach((pokemon) => {
-    const name = pokemon.name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    const name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1).toLowerCase();
     const types = pokemon.types.join(" & ");
     cardContainer.innerHTML +=
     `<div class="card">
