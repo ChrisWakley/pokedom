@@ -2,7 +2,7 @@ import pokemonArray from "./data/pokemon.js";
 //console.log(pokemonArray);
 
 const caps = (nameOfPokemon) => {
-    return nameOfPokemon[0].toUpperCase() + nameOfPokemon.slice(1).toLowerCase();
+    return nameOfPokemon[0].toUpperCase() + nameOfPokemon.slice(1);
 }
 
 const cardContainer = document.querySelector(".card-container");
