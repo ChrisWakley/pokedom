@@ -11,7 +11,7 @@ const showPokemon = () => {
     `<div class="card">
             <img src="${pokemon.sprite}" class="card__image">
             <div class="card__content">
-                <div class="card__heading">${name}</div>
+                <div class="card__header">${name}</div>
                 <div class="card__text">${name} (#${pokemon.id}) is a ${types} type pokemon.</div>
             </div>
     </div>`;
