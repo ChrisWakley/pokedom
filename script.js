@@ -47,6 +47,8 @@ const filterPokemon = () => {
         }
     )}
 
-    const search = () => {
-        document.getElementById("search").addEventListener("click", filterPokemon)
-    };
+    // const search = () => {
+    //     document.getElementById("search").addEventListener("click", filterPokemon)
+    // };
+
+    const search = document.getElementById("search").addEventListener("click", filterPokemon);
