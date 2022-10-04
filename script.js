@@ -5,7 +5,7 @@ const cardContainer = document.querySelector(".card-container");
 
 const showPokemon = () => {
     pokemonArray.forEach((pokemon) => {
-    const name = pokemon.name;
+    const name = pokemon.name.charAt(0).toUpperCase() + pokemon.slice(1).toLowerCase();
     const types = pokemon.types.join(" & ");
     cardContainer.innerHTML +=
     `<div class="card">
@@ -17,5 +17,4 @@ const showPokemon = () => {
     </div>`;
 });
 };
-
 showPokemon(pokemonArray);
